@@ -35,7 +35,7 @@ def index(request):
     return render(request, 'index.html', context=context)
 class BookListView(generic.ListView):
     model = Book
-    paginate_by = 1
+    paginate_by = 5
 
 
     def get_queryset(self):
